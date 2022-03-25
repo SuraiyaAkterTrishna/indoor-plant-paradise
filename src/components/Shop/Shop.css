@@ -3,6 +3,7 @@
     grid-template-columns: 4fr 1fr;
 }
 .plants-container {
+    padding: 50px 40px;
     display : grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
