@@ -6,7 +6,11 @@ const Plant = (props) => {
     return (
         <div className='plant'>
             <img src = {img} alt = ''></img>
-            <p className='plant-name'>{name}</p>
+            <div className='plant-info'>
+                <p className='plant-name'>{name}</p>
+                <p>Price: ${price}</p>
+            </div>
+            
         </div>
     );
 };

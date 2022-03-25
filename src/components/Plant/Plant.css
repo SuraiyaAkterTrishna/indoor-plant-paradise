@@ -1,13 +1,24 @@
 .plant {
     width: 300px;
-    height: 510px;
+    height: 450px;
+    border: 1px solid #08a047;
+    border-radius: 8px;
 }
 .plant img {
     width: 286px;
     height: 286px;
+    border-radius: 8px;
+    margin: 7px;
+}
+.plant-info {
+    margin: 0 14px;
+}
+.plant-info p { 
+    font-weight: 700;
 }
 .plant-name {
     font-weight: 400;
     font-size: 21px;
     line-height: 25px;
+    margin-top: 7px;
 }
