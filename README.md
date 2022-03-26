@@ -1,6 +1,6 @@
 # Indoor Plant Paradise
 
-[Website Live Link](https://indoor-plant-paradise.netlify.app/).
+### [Indoor Plant Paradise Live Link](https://indoor-plant-paradise.netlify.app/).
 
 ## Available Scripts
 
