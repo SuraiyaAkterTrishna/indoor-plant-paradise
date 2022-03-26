@@ -1,32 +1,63 @@
 import React, { useEffect, useState } from 'react';
-import Cart from '../Cart/Cart';
 import Plant from '../Plant/Plant';
-import './Shop.css'
+import Cart from '../Cart/Cart';
+import './Shop.css';
+
 const Shop = () => {
     const [plants, setPlants] = useState([]);
     const [cart, setCart] = useState([]);
-    useEffect( () => {
+    useEffect( ()=>{
         fetch('plants.json')
         .then(res => res.json())
         .then(data => setPlants(data))
-    }, []); 
-    const handleAddToCart = (plant) => {
-        const newCart = [...cart, plant];
-        setCart(newCart); 
+    },[]);
+    
+    let newCart;
+    const addToCart = selectedPlant => {
+        const exists = cart.find(plant => plant.id === selectedPlant.id);
+        if (!exists) {
+            if (cart.length>3) {
+                alert('Ops!! You can added maximum 4 plants in the cart!');
+                newCart = cart;
+            } else {
+                newCart = [...cart, selectedPlant];
+            }
+        } else {
+            newCart = cart;
+        }
+        setCart(newCart);
+    }
+    const chooseRandomPlant = cart =>{
+        if (cart.length === 0) {
+            alert('There are no selected plant for choosing!');
+        } else {
+            const randomPlant = cart[Math.floor(Math.random()*cart.length)];
+            newCart = [randomPlant];
+            setCart(newCart);
+        }
+    }
+    const clearSelectedPlant =  cart =>{
+        newCart = [];
+        setCart(newCart);
     }
     return (
-        <div className='shop-container'>
-            <div className="plants-container">
+        <div className='shop'>
+            <div className='plants'>
                 {
-                    plants.map(plant => <Plant 
-                        key = {plant.id}
-                        plant = {plant}
-                        handleAddToCart = {handleAddToCart}
-                        ></Plant>)
+                    plants.map(plant => <Plant
+                    key = {plant.id}
+                    plant = {plant}
+                    addToCart = {addToCart}
+                    ></Plant>)
                 }
             </div>
-            <div className="cart-container">
-                <Cart cart = {cart}></Cart>
+            <div className='cart-area'>
+                <Cart 
+                cart={cart} 
+                key={cart.id}
+                chooseRandomPlant={chooseRandomPlant}
+                clearSelectedPlant={clearSelectedPlant}
+                ></Cart>
             </div>
         </div>
     );

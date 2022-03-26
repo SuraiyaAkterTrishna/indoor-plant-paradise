@@ -1,18 +1,38 @@
-.shop-container {
+.shop{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    gap: 10px;
 }
-.plants-container {
-    padding: 50px 40px;
-    display : grid;
+.plants{
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 45px;
+    gap: 10px;
+    padding: 100px 50px;
 }
-.cart-container {
-    background-color: #7aeb7ed7;
-    padding: 30px;
-    margin: 10px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 2px 1px 10px;
+.cart-area{
+    margin-top: 100px;
+}
+@media screen and (max-width:991px) {
+    .shop{
+        grid-template-columns: 3fr 1fr;
+    }
+    .plants{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 75px 40px;
+    }
+    .cart-area{
+        margin-top: 75px;
+    }
+}
+@media screen and (max-width:767px) {
+    .shop{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .plants{
+        grid-template-columns: 1fr;
+        padding: 50px 20px;
+    }
+    .cart-area{
+        margin-top: 50px;
+    }
 }

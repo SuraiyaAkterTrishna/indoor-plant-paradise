@@ -7,25 +7,25 @@
   },
   {
     "id": "2",
-    "name": "Monstera Deliciosa Plant",
+    "name": "Monstera Plant",
     "price": 96,
     "img": "https://img.freepik.com/free-photo/monstera-deliciosa-plant-pot_53876-133120.jpg?w=360&t=st=1648231932~exp=1648232532~hmac=32aceef439d595937c7566e5348a88fb33128e3e6f0c2deec7bd9c37e0088d1d"
   },
   {
     "id": "3",
-    "name": "Peace Lily Plant",
+    "name": "Peace Lily",
     "price": 45,
     "img": "https://img.freepik.com/free-photo/peace-lily-plant-pot_53876-133141.jpg?w=360&t=st=1648232057~exp=1648232657~hmac=79fa951b4ed823d2e893db3abd39d72082cf7f63925d917d988e27a926d3895f"
   },
   {
     "id": "4",
-    "name": "Calathea Ornata Plant",
+    "name": "Ornata Plant",
     "price": 29,
     "img": "https://img.freepik.com/free-photo/calathea-ornata-sanderiana-orange-flowerpot_53876-65619.jpg?w=360&t=st=1648232130~exp=1648232730~hmac=86acb8ddb7ae15705ef97247e24613d2537aae9659899d401d5557a8a58aad42"
   },
   {
     "id": "5",
-    "name": "Angel Vine Plant",
+    "name": "Angel Vine",
     "price": 87,
     "img": "https://img.freepik.com/free-photo/angel-vine-indoor-hanging-plant_53876-133148.jpg?w=360&t=st=1648232558~exp=1648233158~hmac=6dee8e02149efa3539c1811a4d6a4b261d71921e9e6f4d98f2f8a8668de7dce4"
   },
@@ -38,31 +38,31 @@
   {
     "id": "7",
     "name": "Orchid Plant",
-    "price": 226,
+    "price": 26,
     "img": "https://img.freepik.com/free-photo/artificial-orchid-flower-white-vase-near-window-with-outside-snow-winter-season_611231-1376.jpg?w=360"
   },
   {
     "id": "8",
     "name": "Succulent Plant",
-    "price": 319,
+    "price": 19,
     "img": "https://img.freepik.com/free-photo/marble-tray-with-succulent-plants-white-wall-houseplants_185193-13938.jpg?w=360"
   },
   {
     "id": "9",
-    "name": "Marble Pothos Plant",
-    "price": 260,
+    "name": "Marble Pothos",
+    "price": 60,
     "img": "https://img.freepik.com/free-photo/marble-pothos-indoor-hanging-plant_53876-134291.jpg?t=st=1648233368~exp=1648233968~hmac=c2e559e4c6596309c948218db2859524053653c46d68abbefacaaa86907a7bb0&w=360"
   },
   {
     "id": "10",
-    "name": "Cereus Cactus Plant",
-    "price": 437,
+    "name": "Cereus Cactus",
+    "price": 43,
     "img": "https://img.freepik.com/free-photo/patterned-plant-pots-with-cereus-cactus_53876-110277.jpg?w=360&t=st=1648233496~exp=1648234096~hmac=987f82a07065f4e2b3f4ca326c1a52e1a18ea2d8d194ed3b947ecdc5a04c3c97"
   },
   {
     "id": "11",
     "name": "Elegant Plant",
-    "price": 146,
+    "price": 46,
     "img": "https://img.freepik.com/free-photo/elegant-plants-decoration-vase_23-2149334643.jpg?w=360"
   },
   {

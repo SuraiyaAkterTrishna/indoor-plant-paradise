@@ -3,25 +3,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './Plant.css';
 
-const Plant = ({plant, handleAddToCart}) => {
-    // const {plant, handleAddToCart} = props;
-    const {name, img, price} = plant;
-    
+const Product = ({plant, addToCart}) => {
+    const {img, name, price} = plant;
     return (
         <div className='plant'>
-            <img src = {img} alt = ''></img>
+            <img src={img} alt="" />
             <div className='plant-info'>
-                <p className='plant-name'>{name}</p>
-                <p>Price: ${price}</p>
+                <h2>{name}</h2>
+                <h4>Price: ${price}</h4>
             </div>
-            <button onClick={() => handleAddToCart(plant)} className='button-cart'>
-                <div className='button-text'>
-                    <p>Add to Cart</p>
-                </div>
-                <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
-            </button>
+            <div onClick={() => addToCart(plant)}  className='plant-btn'>
+                <p>Add to Cart</p>
+                <FontAwesomeIcon icon={faShoppingCart} />
+            </div>
         </div>
     );
 };
 
-export default Plant;
+export default Product;
