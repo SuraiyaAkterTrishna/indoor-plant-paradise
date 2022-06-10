@@ -50,6 +50,7 @@ const Shop = () => {
                     addToCart = {addToCart}
                     ></Plant>)
                 }
+                
             </div>
             <div className='cart-area'>
                 <Cart 
